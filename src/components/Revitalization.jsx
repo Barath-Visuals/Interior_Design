@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Revitalization() {
     return (
-        <div className="w-full sm:w-[350px] bg-[#ECEEEE] p-6 gap-[15px] flex flex-col justify-between rounded-[20px]">
+        <div className="w-full bg-[#ECEEEE] p-6 gap-[15px] flex flex-col  rounded-[20px]">
             <div className="flex items-center gap-4">
                 <div className="w-9 flex items-center ">
                     <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 40 40" fill="none">

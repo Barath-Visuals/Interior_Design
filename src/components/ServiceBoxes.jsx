@@ -11,7 +11,7 @@ export default function ServiceBox() {
                     Service
                 </span>
             </div>
-            <div className="w-full flex flex-wrap gap-5 justify-between max-[640px]:flex-col ">
+            <div className="w-full grid gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 auto-rows-fr ">
                 <Craftsmanship/>
                 <Construction/>
                 <Visualization/>
