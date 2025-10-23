@@ -1,0 +1,56 @@
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("./assets/fonts/SFProDisplay-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("./assets/fonts/SFProDisplay-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("./assets/fonts/SFProDisplay-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("./assets/fonts/SFProDisplay-Semibold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  *, *::before, *::after {
+    @apply box-border;
+  }
+}
+
+/* @layer utilities {
+  .clip-craft {
+    clip-path: path("M335 276 C335 289.255 324.255 300 311 300 H24 C10.7452 300 0 289.255 0 276 V94 C0 80.7452 10.7452 70 24 70 H46 C59.2548 70 70 59.2548 70 46 V24 C70 10.7452 80.7452 0 94 0 H311 C324.255 0 335 10.7452 335 24 V276 Z");
+  }
+} */
+
+body, html{
+  width: 100%;
+  height: 100%;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
