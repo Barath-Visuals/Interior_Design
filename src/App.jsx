@@ -3,7 +3,9 @@ import Hero from './components/Hero.jsx';
 import Header from './components/Header.jsx';
 import ServiceBox from './components/ServiceBoxes.jsx';
 import CollectionHeader from './components/CollectionHeader.jsx';
+import StudioSection from './components/StudioSection.jsx';
 import './App.css'
+import Footer from './components/Footer.jsx';
 
 function App() {
 
@@ -14,6 +16,8 @@ function App() {
         <Hero/>
         <ServiceBox/>
         <CollectionHeader/>
+        <StudioSection/>
+        <Footer/>
       </div>
     </>
   )

@@ -14,7 +14,7 @@ export default function Construction() {
                 <h2 className="font-sfpro font-semibold text-[24px] text-black">Construction</h2>
             </div>
 
-            <p className="font-sfpro font-normal text-[14px] text-black leading-relaxed">
+            <p className="font-sfpro font-normal text-md text-black leading-relaxed">
                 We don’t just design — we build. Our team transforms 3D concepts into reality with seamless execution, managing every stage from planning and construction to finishing and furnishing. With a single, dedicated team overseeing the process, every project reflects one clear vision — yours.
             </p>
         </div>

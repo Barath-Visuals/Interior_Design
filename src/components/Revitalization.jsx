@@ -18,7 +18,7 @@ export default function Revitalization() {
                 <h2 className="font-sfpro font-semibold text-[24px] text-black">Revitalization</h2>
             </div>
 
-            <p className="font-sfpro font-normal text-[14px] text-black leading-relaxed">
+            <p className="font-sfpro font-normal text-md text-black leading-relaxed">
                 We breathe new life into existing spaces. Whether it’s a complete structural revamp or a refined aesthetic update, our restoration design services combine respect for architecture with modern functionality — creating timeless transformations that endure.
             </p>
         </div>

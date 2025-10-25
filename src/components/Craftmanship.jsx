@@ -12,7 +12,7 @@ export default function Craftsmanship() {
                 <h2 className="font-sfpro font-semibold text-[24px] text-black">Craftsmanship</h2>
             </div>
 
-            <p className="font-sfpro font-normal text-[14px] text-black leading-relaxed">
+            <p className="font-sfpro font-normal text-md text text-black leading-relaxed">
                 From bespoke plaster sculptures to handcrafted décor elements, we
                 design and produce unique artistic pieces that bring depth and
                 individuality to every space. Each creation is made in-house with
