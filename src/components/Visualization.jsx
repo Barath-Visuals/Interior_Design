@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Visualization() {
     return (
-        <div className="w-full sm:w-[350px] bg-[#ECEEEE] p-6 gap-[15px] flex flex-col justify-between rounded-[20px]">
+        <div className="w-full bg-[#ECEEEE] p-6 gap-[15px] flex flex-col rounded-[20px]">
             <div className="flex items-center gap-4">
                 <div className="w-8 flex items-center p-0.5">
                     <svg xmlns="http://www.w3.org/2000/svg" width="auto" height="auto" viewBox="0 0 31 35" fill="none">
@@ -14,7 +14,7 @@ export default function Visualization() {
                 <h2 className="font-sfpro font-semibold text-[24px] text-black">Visualization</h2>
             </div>
 
-            <p className="font-sfpro font-normal text-[14px] text-black leading-relaxed">
+            <p className="font-sfpro font-normal text-base text-black leading-relaxed">
                 Visualize your space before it’s built. Our realistic 3D renderings and lighting simulations allow you to explore materials, ambiance, and mood with precision — ensuring your design feels exactly right before execution begins.
             </p>
         </div>

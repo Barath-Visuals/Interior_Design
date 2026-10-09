@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Craftsmanship() {
     return (
-        <div className=" w-full sm:w-[350px] bg-[#ECEEEE] p-6 gap-[15px] flex flex-col justify-between rounded-[20px]">
+        <div className=" w-full bg-[#ECEEEE] p-6 gap-[15px] flex flex-col rounded-[20px]">
             <div className="flex items-center gap-4">
                 <div className="w-8 flex items-center p-0.5">
                     <svg xmlns="http://www.w3.org/2000/svg" width="auto" height="auto" viewBox="0 0 32 35" fill="none">
@@ -12,7 +12,7 @@ export default function Craftsmanship() {
                 <h2 className="font-sfpro font-semibold text-[24px] text-black">Craftsmanship</h2>
             </div>
 
-            <p className="font-sfpro font-normal text-[14px] text-black leading-relaxed">
+            <p className="font-sfpro font-normal text-base text-black leading-relaxed">
                 From bespoke plaster sculptures to handcrafted décor elements, we
                 design and produce unique artistic pieces that bring depth and
                 individuality to every space. Each creation is made in-house with

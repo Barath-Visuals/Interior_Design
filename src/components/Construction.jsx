@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Construction() {
     return (
-        <div className="w-full sm:w-[350px] bg-[#ECEEEE] p-6 gap-[15px] flex flex-col justify-between rounded-[20px]">
+        <div className="w-full bg-[#ECEEEE] p-6 gap-[15px] flex flex-col justify-between rounded-[20px]">
             <div className="flex items-center gap-4">
                 <div className="w-8 flex items-center ">
                     <svg xmlns="http://www.w3.org/2000/svg" width="auto" height="auto" viewBox="0 0 40 33" fill="none">
@@ -14,7 +14,7 @@ export default function Construction() {
                 <h2 className="font-sfpro font-semibold text-[24px] text-black">Construction</h2>
             </div>
 
-            <p className="font-sfpro font-normal text-[14px] text-black leading-relaxed">
+            <p className="font-sfpro font-normal text-base text-black leading-relaxed">
                 We don’t just design — we build. Our team transforms 3D concepts into reality with seamless execution, managing every stage from planning and construction to finishing and furnishing. With a single, dedicated team overseeing the process, every project reflects one clear vision — yours.
             </p>
         </div>

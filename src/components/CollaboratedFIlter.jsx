@@ -24,7 +24,7 @@ export default function Filter({ categories, active, onSelect, onReset}) {
                     >
                         <button
                             onClick={() => onSelect(category)}
-                            className="flex items-center gap-2 font-sfpro font-regular text-[14px]"
+                            className="flex items-center gap-2 font-sfpro font-regular text-base"
                         >
                             {category}
                         </button>

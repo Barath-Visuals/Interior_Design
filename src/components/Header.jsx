@@ -1,7 +1,22 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
+import {gsap} from "gsap";
 
 export default function Header() {
     const [menuOpen, setMenuOpen] = useState(false)
+
+    const buttonRef = useRef([]);
+    useEffect(() => {
+        if(menuOpen) {
+            gsap.fromTo(buttonRef.current,
+                {y : 30, opacity : 0},
+                {y : 0, opacity : 1,
+                    duration: 1.5,
+                    stagger: 0.15,
+                    ease: "power3.inOut",
+                }
+            )
+        }
+    }, [menuOpen]);
     return(
         <header className="fixed top-2 left-0 w-full flex justify-center z-50 px-4 py-4">
             <div className="bg-white/20 backdrop-blur-[10px] relative flex w-full max-w-[1100px] items-center justify-between rounded-[12px] p-2 ">
@@ -45,19 +60,25 @@ export default function Header() {
                 </div>
 
                 <div
-                className={`absolute top-full left-0 w-full bg-white rounded-[12px] mt-2 py-4 flex flex-col items-center gap-4 shadow-md md:hidden transition-all duration-500 ${
-                    menuOpen ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-3 pointer-events-none"
+                className={`absolute top-full left-0 w-full bg-white rounded-[12px] mt-2 py-4 flex flex-col items-center gap-4 md:hidden transition-all duration-500 ${
+                    menuOpen ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-2 pointer-events-none"
                 }`}
                 >
-                    <button className="font-sfpro text-base border border-black/50 rounded-full px-4 py-1.5 hover:bg-black hover:text-white transition-all duration-300">
-                        Studio
-                    </button>
-                    <button className="font-sfpro text-base text-black hover:text-gray-600 transition-all duration-300">
-                        Projects
-                    </button>
-                    <button className="font-sfpro text-base text-black hover:text-gray-600 transition-all duration-300">
-                        Service
-                    </button>
+                    <div className="w-full h-full gap-2 flex flex-col p-4 items-start justify-between">
+                        {["Studio", "Projects", "Service"].map((label, index) => (
+                            <div className="overflow-hidden w-auto" key={index}>
+                                <div
+                                    
+                                    ref={(el) => (buttonRef.current[index] = el)}
+                                    className="overflow-hidden w-auto"
+                                >
+                                    <button className="font-sfpro text-2xl rounded-full px-4 py-1.5 hover:bg-black hover:text-white transition-all duration-300">
+                                        {label}
+                                    </button>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
                 </div>
 
             </div>
